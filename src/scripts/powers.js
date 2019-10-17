@@ -4,7 +4,8 @@ const flight = document.querySelector("#flight")
 const mindreading = document.querySelector("#mindreading")
 const xray = document.querySelector("#xray")
 
-const powerButtons = [flight, mindreading, xray]
+// all them buttons
+const powerButtons = document.querySelectorAll(".power")
 
 const togglePowers = (power) => {
     power.classList.toggle("enabled")
