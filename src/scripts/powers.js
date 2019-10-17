@@ -25,11 +25,15 @@ document.querySelector("#activate-xray").addEventListener("click", function () {
 
 
 // Enable All Powers
-/// THIS IS WHERE I STOPPED WORKING ON THIS SO FAR
 document.querySelector("#activate-all").addEventListener("click", function (){
-    powerButtons.forEach(element => {
-        element.classList.add("enabled") // is working as toggle currently...
+    powerButtons.forEach(button => {
+        button.classList.add("enabled") 
     })
 })
 // Disable All Powers
+document.querySelector("#deactivate-all").addEventListener("click", function (){
+    powerButtons.forEach(button => {
+        button.classList.remove("enabled")
+    })
+})
 // Write two more event handlers for activating and deactivating all powers when the corresponding buttons are clicked. You will need to use the document.querySelectorAll() method for these.
